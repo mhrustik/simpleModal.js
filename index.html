@@ -1,24 +1,20 @@
-# simpleModal.js
+<!DOCTYPE html>
+<html lang="en">
 
-The simple javascrpit library for rendering modal windows
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SimpleModal.js</title>
+   <link rel="stylesheet" href="css/simpleModal.css">
+</head>
 
-# install
+<body>
 
--import simpleModal.js from /dist [Babel YES]
-or
--import simpleModal.js from /js [Babel NO]
-
--import simpleModal.css from /css [Minified NO]
-
-# Example
-
-```
    <button class="open-modal" data-target="#modal_1" type="button">
       <span>open modal</span>
    </button>
-```
 
-```
    <div id="modal_1" class="modal-wrap">
       <div class="modal-content">
          <div class="modal modal-xs">
@@ -38,20 +34,11 @@ or
          </div>
       </div>
    </div>
-```
 
-```
-   <script>
-      new SimpleModal({ id: "modal_1" });
-   </script>
-```
+</body>
+<script src="js/simpleModal.js"></script>
+<script>
+   new SimpleModal({ id: "modal_1" });
+</script>
 
-# other call methods
-
-```
-   <script>
-      const modal = new SimpleModal({ id: "modal_1" });
-      modal.show() - The function for show a modal window.
-      modal.hide() - The function for hide a modal window.
-   </script>
-```
+</html>
